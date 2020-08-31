@@ -1,0 +1,59 @@
+<html>
+<meta http-equiv="pragma" content="no-cache" />
+<body>
+	<style>
+		.city {
+			background-color: #DCDCDC;
+			color: black;
+			border: 5px solid black;
+			padding: 50px;
+		    text-align: center
+		}
+		p {
+			text-align: center;
+		}
+        .la {
+            padding: 30px;
+            background-color: powderblue;
+            text-align: center
+        }
+        .img-preview {
+    width: 256px;
+    height: 256px;
+    position: relative;
+    border: 5px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+    margin-bottom: 1em;    
+}
+.img-preview>div {
+    width: 100%;
+    height: 100%;
+    background-size: 256px 256px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+	</style>
+<div class="city">	
+<form action ="/predict" id="upload-file" method = "post" enctype="multipart/form-data">
+	    <p>PNEUMONIA PREDICTION USING X-RAY IMAGES</p>
+		<p><b>Upload image here</b></p>
+		<p><label for="upload"></label>
+		<input type="file" id="upload" name="image" accept= ".jpg, .jpeg, .png"><br>
+	
+		<input type="submit" value="click">
+	    </p>
+	    </form>
+	    </div>
+<h2 style="text-align:center;">
+            {{y}}
+		</h2>
+<div class="la">
+<p><h2>What is Pneumonia?</h2></p>
+<p>Pneumonia is an inflammatory condition of the lung affecting primarily the small air sacs known as alveoli.Symptoms typically include some combination of productive or dry cough, chest pain, fever and difficulty breathing. The severity of the condition is variable. Pneumonia is usually caused by infection with viruses or bacteria and less commonly by other microorganisms, certain medications or conditions such as autoimmune diseases.Risk factors include cystic fibrosis, chronic obstructive pulmonary disease (COPD), asthma, diabetes, heart failure, a history of smoking, a poor ability to cough such as following a stroke and a weak immune system. Diagnosis is often based on symptoms and physical examination. Chest X-ray, blood tests, and culture of the sputum may help confirm the diagnosis.The disease may be classified by where it was acquired, such as community- or hospital-acquired or healthcare-associated pneumonia.</p>
+<p><h4>check the below video for more information about pneumonia</h4></p>
+<iframe width="620" height="345" src="https://www.youtube.com/embed/O8FqtiNj0T4">
+</iframe>
+</div>
+</body>
+</html>
